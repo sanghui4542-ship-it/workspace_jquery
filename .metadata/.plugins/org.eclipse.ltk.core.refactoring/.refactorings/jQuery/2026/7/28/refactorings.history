@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;jQuery&apos;&#x0D;&#x0A;- Original project: &apos;jQuery&apos;&#x0D;&#x0A;- Original element: &apos;ssdas.html&apos;" description="Delete element" element1="src/main/webapp/01문서객체선택자와조작법/ssdas.html" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1783306632837" subPackages="false" version="1.0"/>
+</session>

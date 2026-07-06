@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Insert title here</title>
+	
+		<!-- JQuery 문법 사용하기 위한 CDN 주소 작성 -->
+		<script src="https://code.jquery.com/jqery-latest.min.js]"></script>	
+		<script>
+			$(function() {
+				/*
+					[id 선택자 # 로 DOM을 선택해오는 식]
+
+						$("id값")
+						-> id값이 #뒤에 작성한 id값과 정확히 일치하는 태그 하나만 선택합니다.
+				
+				<h2 id="tit"></h2> 선택
+				
+				.css("background-color","red"); 코드를 이용해 배경색을 빨강으로 설정
+				
+				*/
+				$("#tit").css("background-color","red");
+				
+				
+			});
+		
+		</script>
+		</head>
+	<body>
+	<h1>제이쿼리</h1>
+	<h2 id="tit"></h2>
+	<h3>직접선택자</h3>
+	</body>
+</html>

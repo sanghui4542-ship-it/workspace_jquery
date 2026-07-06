@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Insert title here</title>
+		<!-- 
+			설치적용 방법1.
+				js폴더 내부에 다운로드 받은 jquery-4.0.0.min.js경로를 작성해
+				Jquery문법을 사용할 수 있게 파일 내용을 불러와 적용
+	
+		 <script src="./js/jquery-4.0.0.min.js"></script>
+		 	
+		  -->
+		 
+	</head>
+	<body>
+		<h1>자바스크립트</h1>
+		<h1 id="h1">자바스크립트2<h1>
+		
+		<h2>제이쿼리</h2>
+		<h2 id="h2">제이쿼리<h2>
+		
+		<script>
+			console.log( $("h2")[0] );
+		</script>
+	
+	
+	
+	</body>
+</html>

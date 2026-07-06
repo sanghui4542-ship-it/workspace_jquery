@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="UTF-8">
+			  <title>Insert title here</title>
+			  <script src="https://code.jquery.com/jqery-latest.min.js]"></script>
+		</head>
+	<body>
+		<h1>제이쿼리</h1>
+		<h2 class="tit">선택자</h2>
+		<h3>직접선택자</h3>
+		
+		<script type="text/javascript">
+		
+		/*
+			<h2 class="tit">선택자</h2>	
+		*/
+		$(".tit")
+		
+		
+		
+		
+		
+		
+		
+		</script>
+		
+		
+	</body>
+</html>
