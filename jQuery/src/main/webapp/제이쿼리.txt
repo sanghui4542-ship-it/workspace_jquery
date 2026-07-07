@@ -184,7 +184,7 @@
 		  				----------------- jq_selec2_3_test.html 파일 실습    eq(index) ,  lt(index), gt(index) 선택자
 						----------------- jq_selec2_4_test.html 파일 실습    first-of-type ,   last-of-type 선택자 
 						----------------- jq_selec2_5_test.html 파일 실습    nth-child(숫자) 또는 nth-child(숫자n) ,     
-																																		nth-last-of-type(숫자) 선택자   
+																		   nth-last-of-type(숫자) 선택자   
 	                   
 	  	     		  
 						----------------- jq_selec2_6_test.html 파일 실습    only-child  ,  slice(index)  선택자 				
