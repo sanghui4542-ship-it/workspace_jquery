@@ -42,30 +42,34 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
 	$(function(){
-		//<p class="txt_1">절대 top위칫값: <span></span></p>요소 내부에 작성된 <span></span>요소 선택해서 변수에 저장
+		//1. <p class="txt_1">절대 top위칫값: <span></span></p>요소 내부에 작성된 <span></span>요소 선택해서 변수에 저장
 		let $txt1 = $(".txt_1 span");
 		//<span></span>
 				
-		//<p class="txt_2">상대 top위칫값: <span></span></p>요소 내부에 작성된 <span></span>요소 선택해서 변수에 저장
+		//2. <p class="txt_2">상대 top위칫값: <span></span></p>요소 내부에 작성된 <span></span>요소 선택해서 변수에 저장
 		let $txt2 = $(".txt_2 span");
 		//<span></span>
 		
-		//<p class="box">박스</p> 요소 선택해서 변수에 저장
+		//3. <p class="box">박스</p> 요소 선택해서 변수에 저장
 		let $box = $(".box");
 		
-		//전체 문서 화면을 기준으로 <p class="box">박스</p>요소의 
-		//y축방향으로 얼마만큼 위치해 있는지의 top의값 얻는다.
+		//4. 전체 문서 화면을 기준으로 <p class="box">박스</p>요소의 
+		// y축방향(위에서 아랫 세로 방향)으로 얼마만큼 내려와 있는지의 top의값 얻는다.
 		let off_t = $box.offset().top;
 		console.log(off_t); //100
 		
+		//4.1. <span></span> 사이에 100 넣기
 		$txt1.text(off_t); //<span>100</span> 
 		
 		
-		//감싸고 있는 부모요소를 기준으로 <p class="box">박스</p>요소가
-		//y축방향으로 얼마만큼 위치해 있는지의 top의 값 얻는다.   
+		//5. 부모 <div id="box_warp"></div>요소를 기준으로 
+		// 자식 <p class="box">박스</p>요소가
+		//y축방향(위에서 아래 세로 방향)으로 상대적으로 얼마만큼 내려와 있는지의 top속성의 값 얻는다.   
 		let pos_t = $box.position().top; 
+		//감싸고 있는 부모 <div>를 기준으로 <p>요소가 y축방향으로 얼마만큼 내려와 있는지 top속성의 값을 얻을 수 있음
 		console.log(pos_t);//50
 		
+		//5.1.<span></span> 사이에 50 넣기
 		$txt2.text(pos_t);//<span>50</span>
 		
 		
