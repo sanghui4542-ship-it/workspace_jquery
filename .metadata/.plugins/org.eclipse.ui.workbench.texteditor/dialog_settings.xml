@@ -10,6 +10,7 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="eq"/>
 			<item value="속성 탐색"/>
 			<item value="속성"/>
 			<item value="addtodo"/>

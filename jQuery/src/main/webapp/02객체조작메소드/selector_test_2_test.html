@@ -9,14 +9,17 @@
 <script type="text/javascript">
 
 	$(function(){
-		//방법1.  <li>내용3</li> 선택해서 가져와 바깥 테두리 선 굵기 1px, 가는 실선, 노란색 선으로 설정
-		$("#myList li:contains('내용3')").css("border","1px solid yellow");
+		/* 도전 미션2. <li>내용3</li> 선택해서 가져와 
+		             바깥 테두리 선 굵기 1px, 가는 실선, 노란색 선으로 설정 */
+		//방법1.
+		//$("#myList li:contains('내용3')").css("border","1px solid yellow");
+	
+		//방법2. eq(2) 를 사용하여 세번 째 <li>내용3</li> 요소 선택
+		//$("#myList li").eq(2).css("border","1px solid yellow");
 		
-		//방법2. eq(2)를 사용하여 세 번째 <li> 요소 선택 후 글자색상을 빨간색으로 설정
- 		$("#myList li").eq(2).css("color","red");
-		
-		//방법3. each()를 사용하여 모든 <li> 요소 순회하여  
-		//      컨텐츠영역에 "내용3" 텍스트를 가진 세번째 <li>요소 만 선택 후 배경색을 다시 aqua로 설정
+		//방법3. each() 메소드를 사용하여 모든 <li>을 배열에 담아 순회 하면서 
+		//      컨텐츠 영역에 "내용3" 텍스트를 가진 세번쨰 <li>내용3</li> 요소에만 
+		//      바깥 테두리 선 굵기 1px, 가는 실선, 노란색 선으로 설정
 		/*
 			  [
 				 0 	<li>내용1</li>,
@@ -25,25 +28,17 @@
 				 3 	<li>내용4</li>,
 			  ]
 		*/
-		$("#myList li").each(function(){
-			//반복 순회 하면서 <li>요소의 텍스트노드가 내용3일 경우에만 배경색을  다시 aqua로 설정 
-				//<li>내용1</li>
-				//    "내용1"      === "내용3"
-				
-				//<li>내용2</li>
-				//	  "내용2"      === "내용3"
-				
-				//<li>내용3</li>
-				//    "내용3"      === "내용3"
-				
-				//<li>내용4</li>
-				//    "내용4"     === "내용3"
-			if( $(this).text()   === "내용3"){
-
-				//$(<li>내용3</li>).css("backgroundColor","aqua");
-				$(this).css("backgroundColor", "aqua");
-			}
-		}); 	
+			$("#myList li").each(function(){
+							
+				   if( $(this).text() == "내용3" ){
+					   
+					 //$(<li>내용3</li>).css("backgroundColor","aqua");
+					            $(this).css("border","1px solid yellow");
+				   } 			
+			});
+		
+		
+		
 	});
 </script>
 </head>
