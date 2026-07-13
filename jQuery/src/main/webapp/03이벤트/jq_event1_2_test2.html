@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전체 선택 체크박스 예제</title>
+    
+    
+    
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
@@ -56,8 +60,29 @@
 	</table>
 
 	<script>
-		
-		
+		/* 
+			순서1. 각 학생 모든 <input type="checkbox">들을 다중선택해서 가져와 change이벤트 등록
+				  change이벤트가 발생할때마다 이벤트핸들러 함수가 실행되어 change이벤트처리		
+		*/
+		$(".studentCheckbox").on("change", function(){
+			
+			//체크박스 상태(체크된 상태 또는 미체크된 상태)에 따라 다른 작업을 수행하게 이벤트 처리
+			console.log( $(this).parent().next().text() + ( this.checked ? '체크됨' : '체크 해제됨' ) );
+											  //'학생 4' + '체크됨'
+											  //'학생 4 체크됨'
+							      //console.log('학생 4 체크됨');
+											 
+		});
+	
+	
+		/* 순서2. <input type="checkbox" id="selectAll"> 전체선택 요소를 선택해서 "click" 이벤트 등록 */
+		$("#selectAll").on("click", function(){
+			
+			/* 
+		 	 순서2.
+			*/
+			
+		})
 		
 		
 		
