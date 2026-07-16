@@ -28,8 +28,17 @@
 	<script type="text/javascript">
 		$(function(){
 				
+			$("h1").animate({marginLeft:"250px"},3000);	
+			
+			$("h2").delay(1000).animate({marginLeft:"250px"},3000);
 				
+			//<button id="stopBtn">stop</button>을 클릭하면
+			//<h1>내용</h1>가 애니메이션 동작 정지
+			$("#stopBtn").on("click", function(){
 				
+				$("h1").stop(); //애니메이션 동작 정지
+			});
+			
 		});
 	</script>
 </head>
@@ -42,6 +51,10 @@
 	
 </body>
 </html>
+
+
+
+
 
 
 

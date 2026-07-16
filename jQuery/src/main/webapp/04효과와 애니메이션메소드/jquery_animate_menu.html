@@ -43,8 +43,6 @@
 	
 	</style>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	
-	
 </head>
 <body>
 	<div class="menu">
@@ -65,9 +63,25 @@
 			<a href="#" class="menu-item">Menu 5</a>
 			<a href="#" class="menu-item">Menu 6</a>
 	</div>
-
 	<script type="text/javascript">
-	
+		
+		const speed = 300;
+		
+		//하위 메뉴 아래로 펼쳐 지며 노출되게 하기
+		$(".menu-with-submenu").on("mouseover", function(){
+			
+			$(this).find(".submenu").stop().slideDown(speed);
+			
+		});
+			
+		//하위 메뉴 위로 접으며 숨겨지게 하기 
+		$(".menu-with-submenu").mouseout(function(){
+			
+			//마우스포인트거 벗어난? 상위<div>를 this로 선택하고
+			//.submenu 로 하위 서브<div>를 최종 선택해!!!!!!!!!!!!!!!!!!!!
+			$(".submenu",this).stop().slideUp(speed);
+
+		});
 
 	
 	</script>
